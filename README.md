@@ -12,9 +12,12 @@ This package provides a wrapper to [MITM proxy](https://mitmproxy.org/) from R a
 devtools::install_github("ropenscilabs/middlechild")
 ```
 
+You will also need to install `MITMproxy` on your local machine for R to access it. Download and install from https://mitmproxy.org/
+
 ### Usage
 
 ```r
+library(middlechild)
 list_interfaces()
 
  hw_port            dev     mac              
