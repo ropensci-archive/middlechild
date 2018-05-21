@@ -1,9 +1,30 @@
 Package: middlechild
-Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
-Description: What the package does (one paragraph).
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-License: What license is it under?
+Type: Package
+Title: Tools to Intercept and Validate Network Traffic
+Version: 0.1.0
+Date: 2018-05-21
+Authors@R: c(
+    person("Ildiko", "Czeller", email = "czeildi@gmail.com", role = c("aut", "cre")), 
+    person("Karthik", "Ram", email = "karthik.ram@gmail.com", role = c("aut"), 
+           comment = c(ORCID = " 0000-0002-0233-1757")),
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut"), 
+           comment = c(ORCID = "0000-0001-5670-2640"))
+  )
+Maintainer: ropensci <ropensci@ropensci.org>
+Description: The 'mitmproxy' <https://mitmproxy.org/> project provides tools
+   to intercept, modify and/or introspect network traffic. Methods are provided to 
+   download, install, configure and launch 'mitmproxy' plus introspect and validate
+   network captures.
+SystemRequirements: Python 2/Python 3
+URL: https://github.com/ropenscilabs/middlechild
+BugReports: https://github.com/ropenscilabs/middlechild
 Encoding: UTF-8
-LazyData: true
-ByteCompile: true
+License: MIT + file LICENSE
+Suggests:
+    testthat,
+    covr
+Depends:
+    R (>= 3.2.0)
+Imports:
+    sys
+RoxygenNote: 6.0.1.9000
