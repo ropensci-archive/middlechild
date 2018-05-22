@@ -11,7 +11,7 @@ Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut"), 
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
-Maintainer: ropensci <ropensci@ropensci.org>
+Maintainer: ropensci <info@ropensci.org>
 Description: The 'mitmproxy' <https://mitmproxy.org/> project provides tools
    to intercept, modify and/or introspect network traffic. Methods are provided to 
    download, install, configure and launch 'mitmproxy' plus introspect and validate
@@ -27,6 +27,7 @@ Suggests:
 Depends:
     R (>= 3.2.0)
 Imports:
+    devtools,
     sys,
     stringi,
     devtools
