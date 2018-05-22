@@ -5,5 +5,6 @@ sudo: true
 cache: packages
 
 before_install:
+- Rscript -e 'install.packages("sys", repos = "http://cran.rstudio.com")'
 - sudo apt-get install python-dev
 - sudo pip install mitmproxy
