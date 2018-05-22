@@ -32,7 +32,7 @@ install_mitm <- function() {
     )
     
   } else { # macOS (hopefully)
-    message("Please run 'brew install mitmproxy' at a macOS command prompt.")
+    message("\nPlease run 'brew install mitmproxy' at a macOS command prompt.")
   }
   
   message(

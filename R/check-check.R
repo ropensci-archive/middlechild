@@ -4,7 +4,7 @@ perform_safety_check <- function(chk_df) {
     ret <- c(ret, if(grepl("cran", chk_df[i, "req_url"])) "Info:CRAN" else NULL)
     ret <- c(ret, if(grepl("^http://", chk_df[i, "req_url"])) "NoSSL" else NULL)
     ret <- c(ret, if(chk_df[i, "status_code"] != 200) sprintf("Code:%s", chk_df[i, "status_code"]) else NULL)
-    ret <- c(ret, if(grepl("^R \\(|^libcurl", chk_df[i, "status_code"])) NULL else "BadUA")
+    ret <- c(ret, if(grepl("^R \\(|^libcurl", chk_df[i, "user_agent"])) "BadUA" else NULL)
     paste(ret, collapse=",")
   }, USE.NAMES = FALSE)
 }
