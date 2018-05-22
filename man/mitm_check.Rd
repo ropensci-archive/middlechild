@@ -4,7 +4,7 @@
 \alias{mitm_check}
 \title{R CMD check a package (source tree), capturing network calls.}
 \usage{
-mitm_check(package_path, timeout = 4, quiet = FALSE)
+mitm_check(package_path, timeout = 3, quiet = FALSE)
 }
 \arguments{
 \item{package_path}{Path to a local copy of a R package}

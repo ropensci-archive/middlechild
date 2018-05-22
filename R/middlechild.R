@@ -11,5 +11,6 @@
 #' @author Ildiko Czeller (czeildi@@gmail.com)
 #' @author Karthik Ram (karthik.ram@@gmail.com)
 #' @author Bob Rudis (bob@@rud.is)
-#' @import sys
+#' @import sys stringi
+#' @importFrom devtools check
 NULL

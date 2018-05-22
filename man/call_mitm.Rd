@@ -2,7 +2,7 @@
 % Please edit documentation in R/mitm-helpers.R
 \name{call_mitm}
 \alias{call_mitm}
-\title{Spawn a mitmdump background process and return the process id}
+\title{Spawn a mitmdump background process with custom args and return the process id}
 \usage{
 call_mitm(args)
 }
@@ -10,5 +10,9 @@ call_mitm(args)
 \item{args}{see \code{\link[sys:exec_background]{sys::exec_background()}}}
 }
 \description{
-Spawn a mitmdump background process and return the process id
+Returns process id. Use \code{\link[tools:pskill]{tools::pskill()}} to kill.
+}
+\seealso{
+Other mitm_helpers: \code{\link{install_mitm}},
+  \code{\link{mitm_help}}, \code{\link{start_mitm}}
 }

@@ -1,8 +1,18 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Travis build
-status](https://travis-ci.org/ropenscilabs/middlechild.svg?branch=master)](https://travis-ci.org/ropenscilabs/middlechild)
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+[![Travis build status](https://travis-ci.org/ropenscilabs/middlechild.svg?branch=master)](https://travis-ci.org/ropenscilabs/middlechild)
 
 # middlechild
 
@@ -10,36 +20,30 @@ Tools to Intercept and Validate Network Traffic
 
 ## Description
 
-The ‘mitmproxy’ <https://mitmproxy.org/> project provides tools to
-intercept, modify and/or introspect network traffic. Methods are
-provided to download, install, configure and launch ‘mitmproxy’ plus
-introspect and validate network captures.
+The 'mitmproxy' <https://mitmproxy.org/> project provides tools
+to intercept, modify and/or introspect network traffic. Methods are provided to 
+download, install, configure and launch 'mitmproxy' plus introspect and validate
+network captures.
 
-Special tools are provided enabling testing of R packages that make API
-calls.
+Special tools are provided enabling testing of R packages that make API calls. 
 
-## What’s Inside The Tin
+## What's Inside The Tin
 
 The following functions/methods are provided:
 
-  - `call_mitm`: Spawn a mitmdump background process with custom args
-    and return the process id
-  - `install_mitm`: Helper to get mitmproxy installed
-  - `mitm_check`: R CMD check a package (source tree), capturing network
-    calls.
-  - `mitm_help`: Show the mitmdump help screen
-  - `mitm_status`: Check on the status of an mitmproxy process created
-    with ‘mitm\_start()’
-  - `start_mitm`: Spawn a mitmdump background process in “HAR capture”
-    mode and return the process id
-  - `stop_mitm`: Stop the mitmproxy background process and retrieve the
-    generated HAR file
+- `call_mitm`:	Spawn a mitmdump background process with custom args and return the process id
+- `install_mitm`:	Helper to get mitmproxy installed
+- `mitm_check`:	R CMD check a package (source tree), capturing network calls.
+- `mitm_help`:	Show the mitmdump help screen
+- `mitm_status`:	Check on the status of an mitmproxy process created with 'mitm_start()'
+- `start_mitm`:	Spawn a mitmdump background process in "HAR capture" mode and return the process id
+- `stop_mitm`:	Stop the mitmproxy background process and retrieve the generated HAR file
 
 ## Installation
 
 You can install middlechild from github with:
 
-``` r
+```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("ropenscilabs/middlechild")
 ```
@@ -48,8 +52,8 @@ devtools::install_github("ropenscilabs/middlechild")
 
 ### Package Check Usage
 
-``` r
-chk <- mitm_check("~/packages/testevil/", quiet=TRUE)
+```{r example-01, eval = FALSE}
+chk <- mitm_check("~/packages/testevil/", quiet = TRUE)
 ## Loading script: /Library/Frameworks/R.framework/Versions/3.5/Resources/library/middlechild/mitm/har_dump.py
 ## Proxy server listening at http://*:8080
 ## Updating testevil documentation
@@ -91,7 +95,7 @@ chk
 
 ### General Usage
 
-``` r
+```{r example-02, eval = FALSE}
 pid <- middlechild::start_mitm()
 
 # Visit a cpl sites in Firefox
