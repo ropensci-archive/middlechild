@@ -34,10 +34,9 @@ check_check <- function(mitm_check_har) {
   ) -> xdf
   
   xdf$issues <- perform_safety_check(xdf)
-  
-  class(xdf) <- c("tbl_df", "tbl", "data.frame")
-  
+  class(xdf) <- c("tbl", "tbl_df", "data.frame")
   xdf <- xdf[,c(5,1,2,3,4)]
+  
   
   xdf
   

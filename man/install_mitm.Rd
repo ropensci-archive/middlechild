@@ -13,3 +13,4 @@ It doesn't so much as "install" anything as guide you on the path.
 Other mitm_helpers: \code{\link{call_mitm}},
   \code{\link{mitm_help}}, \code{\link{start_mitm}}
 }
+\concept{mitm_helpers}

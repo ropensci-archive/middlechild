@@ -21,3 +21,4 @@ to check on the status of the background process.
 Other mitm_helpers: \code{\link{call_mitm}},
   \code{\link{install_mitm}}, \code{\link{mitm_help}}
 }
+\concept{mitm_helpers}
