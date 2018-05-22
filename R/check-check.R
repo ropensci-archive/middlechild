@@ -37,6 +37,8 @@ check_check <- function(mitm_check_har) {
   
   class(xdf) <- c("tbl_df", "tbl", "data.frame")
   
+  xdf <- xdf[,c(5,1,2,3,4)]
+  
   xdf
   
 } 
