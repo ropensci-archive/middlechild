@@ -3,7 +3,7 @@ check_check <- function(mitm_check_df) {
   
   do.call(
     rbind.data.frame,
-    lapply(x$log$entries, function(.x) {
+    lapply(mitm_check_df$log$entries, function(.x) {
       
       req_url <- .x$request$url 
       status_code <- .x$response$status
