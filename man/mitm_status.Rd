@@ -4,7 +4,7 @@
 \alias{mitm_status}
 \title{Check on the status of an mitmproxy process created with \code{mitm_start()}}
 \usage{
-mitm_status(pid_obj)
+mitm_status(pid_obj = NULL)
 }
 \arguments{
 \item{pid_obj}{\code{mitm_pid} object created with \code{start_mitm}}

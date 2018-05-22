@@ -1,4 +1,15 @@
 
+![](./man/figures/mitm.png)
+
+# rOpenSci Unconf 18 Project : middlechild
+
+## Authors:
+
+  - Ildiko Czeller
+  - Karthik Ram
+  - Bob Rudis
+  - Kara Woo
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 [![Travis build
@@ -49,7 +60,7 @@ devtools::install_github("ropenscilabs/middlechild")
 ### Package Check Usage
 
 ``` r
-chk <- mitm_check("~/packages/testevil/", quiet=TRUE)
+chk <- mitm_check("~/packages/testevil/", quiet = TRUE)
 ## Loading script: /Library/Frameworks/R.framework/Versions/3.5/Resources/library/middlechild/mitm/har_dump.py
 ## Proxy server listening at http://*:8080
 ## Updating testevil documentation
