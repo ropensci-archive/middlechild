@@ -9,7 +9,11 @@ perform_safety_check <- function(chk_df) {
   }, USE.NAMES = FALSE)
 }
 
-# Check the HAR from the mitm_check() call
+#' Check the HAR from the mitm_check() call
+#' 
+#' @md
+#' @param mitm_check_har HAR file from [mitm_check()]
+#' @export
 check_check <- function(mitm_check_har) {
   
   do.call(
