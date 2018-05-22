@@ -9,19 +9,19 @@
 #' \dontrun{
 #' mitm_check(package_path = "/local/path")
 #' }
-mitm_check <- function(package_path, timeout = 4, quiet = FALSE) {
+mitm_check <- function(package_path, timeout = 3, quiet = FALSE) {
   
   if(is.null(package_path)) {
     stop("Need a local path to a package to run checks", call. = FALSE)
   }
   
-  file <- system.file("mitm", "har_dump.py", package = "middlechild")
+  har_script <- system.file("mitm", "har_dump.py", package = "middlechild")
   
   dump_file <- tempfile(fileext = ".har")
   
   on.exit(unlink(dump_file), add=TRUE) # remove tmp file when done w/f()
   
-  args <- c("-s", file,  "--set", sprintf("hardump=%s", dump_file))
+  args <- c("-s", har_script, "--set", sprintf("hardump=%s", dump_file))
   
   pid <- call_mitm(args = args) # mitmdump -s ./har_dump.py --set hardump=./dump.har
   
