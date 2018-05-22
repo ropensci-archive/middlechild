@@ -16,4 +16,3 @@ Returns process id. Use \code{\link[tools:pskill]{tools::pskill()}} to kill.
 Other mitm_helpers: \code{\link{install_mitm}},
   \code{\link{mitm_help}}, \code{\link{start_mitm}}
 }
-\concept{mitm_helpers}

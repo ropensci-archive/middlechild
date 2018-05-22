@@ -13,4 +13,3 @@ Show the mitmdump help screen
 Other mitm_helpers: \code{\link{call_mitm}},
   \code{\link{install_mitm}}, \code{\link{start_mitm}}
 }
-\concept{mitm_helpers}

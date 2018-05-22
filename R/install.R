@@ -32,11 +32,11 @@ install_mitm <- function() {
     )
     
   } else { # macOS (hopefully)
-    message("\nPlease run 'brew install mitmproxy' at a macOS command prompt.")
+    message("\n Please run 'brew install mitmproxy' at a macOS command prompt.")
   }
   
   message(
-    "\nThe path to the executable 'mitmdump[.exe]' must be available on the system PATH."
+    "\n The path to the executable 'mitmdump[.exe]' must be available on the system PATH."
   )
   
 }

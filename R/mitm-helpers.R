@@ -23,11 +23,11 @@ call_mitm <- function(args) {
 #' to check on the status of the background process.
 #' 
 #' @md
-#' @param etra_args see `args` in [sys::exec_background()]
+#' @param extra_args see `args` in [sys::exec_background()]
 #' @return `mitm_pid` object
 #' @family mitm_helpers
 #' @export
-start_mitm <- function(extra_args=NULL) {
+start_mitm <- function(extra_args = NULL) {
   
   mitm_bin <- find_mitm()
   
@@ -69,7 +69,7 @@ stop_mitm <- function(pid_obj) {
 #' Check on the status of an mitmproxy process created with `mitm_start()`
 #' 
 #' @md
-#' @param #' @param pid_obj `mitm_pid` object created with `start_mitm`
+#' @param pid_obj `mitm_pid` object created with `start_mitm`
 #' @return logical. `TRUE` if the background process is still running
 #' @export
 mitm_status <- function(pid_obj) {

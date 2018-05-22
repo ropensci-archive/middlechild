@@ -7,7 +7,7 @@
 start_mitm(extra_args = NULL)
 }
 \arguments{
-\item{etra_args}{see \code{args} in \code{\link[sys:exec_background]{sys::exec_background()}}}
+\item{extra_args}{see \code{args} in \code{\link[sys:exec_background]{sys::exec_background()}}}
 }
 \value{
 \code{mitm_pid} object
@@ -21,4 +21,3 @@ to check on the status of the background process.
 Other mitm_helpers: \code{\link{call_mitm}},
   \code{\link{install_mitm}}, \code{\link{mitm_help}}
 }
-\concept{mitm_helpers}

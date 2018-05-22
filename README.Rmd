@@ -52,8 +52,8 @@ devtools::install_github("ropenscilabs/middlechild")
 
 ### Package Check Usage
 
-```{r example-01, eval=FALSE}
-chk <- mitm_check("~/packages/testevil/", quiet=TRUE)
+```{r example-01, eval = FALSE}
+chk <- mitm_check("~/packages/testevil/", quiet = TRUE)
 ## Loading script: /Library/Frameworks/R.framework/Versions/3.5/Resources/library/middlechild/mitm/har_dump.py
 ## Proxy server listening at http://*:8080
 ## Updating testevil documentation
@@ -95,7 +95,7 @@ chk
 
 ### General Usage
 
-```{r example-02, eval=FALSE}
+```{r example-02, eval = FALSE}
 pid <- middlechild::start_mitm()
 
 # Visit a cpl sites in Firefox

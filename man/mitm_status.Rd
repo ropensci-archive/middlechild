@@ -7,7 +7,7 @@
 mitm_status(pid_obj)
 }
 \arguments{
-\item{#'}{@param pid_obj \code{mitm_pid} object created with \code{start_mitm}}
+\item{pid_obj}{\code{mitm_pid} object created with \code{start_mitm}}
 }
 \value{
 logical. \code{TRUE} if the background process is still running
