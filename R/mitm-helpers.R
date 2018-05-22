@@ -72,9 +72,12 @@ stop_mitm <- function(pid_obj) {
 #' @param pid_obj `mitm_pid` object created with `start_mitm`
 #' @return logical. `TRUE` if the background process is still running
 #' @export
-mitm_status <- function(pid_obj) {
+mitm_status <- function(pid_obj = NULL) {
 
-  is.na(sys::exec_status(pid_obj$pid, wait=FALSE))
+  if(is.null(pid_obj)) 
+      stop("pid_obj cannot be NULL", call. = FALSE)
+  
+  is.na(sys::exec_status(pid_obj$pid, wait = FALSE))
     
 }
 

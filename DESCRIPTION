@@ -23,6 +23,7 @@ Encoding: UTF-8
 License: MIT + file LICENSE
 Suggests:
     testthat,
+    git2r,
     covr
 Depends:
     R (>= 3.2.0)
