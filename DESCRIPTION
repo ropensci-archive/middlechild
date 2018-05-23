@@ -7,8 +7,10 @@ Authors@R: c(
     person("Ildiko", "Czeller", email = "czeildi@gmail.com", role = c("aut", "cre")), 
     person("Karthik", "Ram", email = "karthik.ram@gmail.com", role = c("aut"), 
            comment = c(ORCID = " 0000-0002-0233-1757")),
+    person("Aldo", "Cortesi", role = c("aut"), 
+            comment="mitmproxy <https://github.com/mitmproxy/mitmproxy>"),
     person("Kara", "Woo", role = "aut", comment = c(ORCID = "0000-0002-5125-4188")),
-    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut"), 
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cph"  ), 
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Karthik Ram <karthik@ropensci.org>
