@@ -26,7 +26,8 @@ Suggests:
     git2r,
     covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    roxygen2
 Depends:
     R (>= 3.2.0)
 Imports:

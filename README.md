@@ -15,6 +15,8 @@
 [![Travis build
 status](https://travis-ci.org/ropenscilabs/middlechild.svg?branch=master)](https://travis-ci.org/ropenscilabs/middlechild)
 
+![](middle_child_hex.png)
+
 # middlechild
 
 Tools to Intercept and Validate Network Traffic
