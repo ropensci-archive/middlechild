@@ -19,19 +19,17 @@ check_check <- function(mitm_check_har) {
   do.call(
     rbind.data.frame,
     lapply(mitm_check_har$log$entries, function(.x) {
-      
-      req_url <- .x$request$url 
-      status_code <- .x$response$status
-      
+
+      # get headers
       hdrs <- sapply(.x$request$headers, `[[`, "value")
       hdrs <- stats::setNames(hdrs, tolower(sapply(.x$request$headers, `[[`, "name")))
       
       data.frame(
-        req_url = .x$request$url,
-        method = .x$request$method,
-        status_code = .x$response$status,
+        req_url = .x$request$url, # get the URL
+        method = .x$request$method, # get calling method (GET/POST/etc)
+        status_code = .x$response$status, # get server response status
         user_agent = hdrs[["user-agent"]],
-        stringsAsFactors=FALSE
+        stringsAsFactors = FALSE
       )
       
     })
@@ -39,8 +37,8 @@ check_check <- function(mitm_check_har) {
   
   xdf$issues <- perform_safety_check(xdf)
   class(xdf) <- c("tbl", "tbl_df", "data.frame")
-  xdf <- xdf[,c(5,1,2,3,4)]
   
+  xdf <- xdf[,c(5,1,2,3,4)] # order matters for visual inspection
   
   xdf
   

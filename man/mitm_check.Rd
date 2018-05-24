@@ -4,7 +4,8 @@
 \alias{mitm_check}
 \title{R CMD check a package (source tree), capturing network calls.}
 \usage{
-mitm_check(package_path, timeout = 3, quiet = FALSE)
+mitm_check(package_path, timeout = 3, quiet = FALSE,
+  mitm_host = "127.0.0.1", mitm_port = "8080", extra_args = NULL)
 }
 \arguments{
 \item{package_path}{Path to a local copy of a R package}
@@ -12,6 +13,11 @@ mitm_check(package_path, timeout = 3, quiet = FALSE)
 \item{timeout}{Wait time after launching MITM server to run R code}
 
 \item{quiet}{passed on to [devtools::check()]; Default `FALSE`.}
+
+\item{mitm_host, mitm_port}{IP address of the system `mitmproxy` tools will be 
+running on and the port. Defaults to `127.0.0.1` and `8080` respectively.}
+
+\item{extra_args}{command-line arguments passed on to `mitmdump`.}
 }
 \value{
 data frame (tibble) of safety check results or `NULL` if package check errors

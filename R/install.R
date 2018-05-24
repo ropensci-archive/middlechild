@@ -36,7 +36,9 @@ install_mitm <- function() {
   }
   
   message(
-    "\n The path to the executable 'mitmdump[.exe]' must be available on the system PATH."
+    "\nThe path to the executable 'mitmdump[.exe]' must be available on the system PATH.\n",
+    "\nIf this is your first time working with 'middlechild' and 'mitmproxy' please see ",
+    "the 'Getting Started' vignette:\n  `vignette(\"getting-started\", package=\"middlechild\")`"
   )
   
 }

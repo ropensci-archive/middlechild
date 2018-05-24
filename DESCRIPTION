@@ -6,7 +6,7 @@ Date: 2018-05-21
 Authors@R: c(
     person("Ildiko", "Czeller", email = "czeildi@gmail.com", role = c("aut", "cre")), 
     person("Karthik", "Ram", email = "karthik.ram@gmail.com", role = c("aut"), 
-           comment = c(ORCID = " 0000-0002-0233-1757")),
+           comment = c(ORCID = "0000-0002-0233-1757")),
     person("Aldo", "Cortesi", role = c("aut"), 
             comment="mitmproxy <https://github.com/mitmproxy/mitmproxy>"),
     person("Kara", "Woo", role = "aut", comment = c(ORCID = "0000-0002-5125-4188")),
@@ -28,6 +28,7 @@ Suggests:
     git2r,
     covr,
     knitr,
+    getPass,
     rmarkdown,
     roxygen2
 Depends:

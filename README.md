@@ -37,7 +37,10 @@ The following functions/methods are provided:
 
   - `call_mitm`: Spawn a mitmdump background process with custom args
     and return the process id
+  - `check_check`: Check the HAR from the mitm\_check() call
   - `install_mitm`: Helper to get mitmproxy installed
+  - `install_mitm_certificate`: Helper to install mitmproxy root CA
+    certificate
   - `mitm_check`: R CMD check a package (source tree), capturing network
     calls.
   - `mitm_help`: Show the mitmdump help screen

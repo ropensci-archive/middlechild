@@ -14,4 +14,5 @@
 #' @author Kara Woo
 #' @import sys stringi
 #' @importFrom devtools check
+#' @importFrom getPass getPass
 NULL
