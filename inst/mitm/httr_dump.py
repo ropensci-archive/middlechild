@@ -1,5 +1,6 @@
 import json
 import os
+import gzip
 import base64
 
 from datetime import datetime
@@ -29,7 +30,7 @@ class httr_dumper:
       )
 
     def configure(self, updated):
-      self.f = open(ctx.options.httrdump, "wb")
+      self.f = gzip.open(ctx.options.httrdump, "wb")
 
     def response(self, flow):
       

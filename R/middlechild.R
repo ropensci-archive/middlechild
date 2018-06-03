@@ -15,4 +15,7 @@
 #' @import sys stringi
 #' @importFrom devtools check
 #' @importFrom getPass getPass
+#' @importFrom tools file_ext
+#' @importFrom jsonlite stream_in
+#' @importFrom openssl base64_decode
 NULL

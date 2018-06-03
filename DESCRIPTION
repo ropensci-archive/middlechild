@@ -10,7 +10,7 @@ Authors@R: c(
     person("Aldo", "Cortesi", role = c("aut"), 
             comment="mitmproxy <https://github.com/mitmproxy/mitmproxy>"),
     person("Kara", "Woo", role = "aut", comment = c(ORCID = "0000-0002-5125-4188")),
-    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cph"  ), 
+    person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cph"), 
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Karthik Ram <karthik@ropensci.org>
@@ -37,6 +37,9 @@ Imports:
     devtools,
     HARtools,
     stringi,
-    sys
+    sys,
+    jsonlite,
+    tools,
+    openssl
 RoxygenNote: 6.0.1.9000
 VignetteBuilder: knitr

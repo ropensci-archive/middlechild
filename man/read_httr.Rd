@@ -2,13 +2,13 @@
 % Please edit documentation in R/read-httr.R
 \name{read_httr}
 \alias{read_httr}
-\title{Read a serialed httr ndjson object file}
+\title{Read a serialized httr response object ndjson file}
 \usage{
 read_httr(path)
 }
 \arguments{
-\item{path}{path to httr ndjson object file}
+\item{path}{path to httr ndjson object file. Can be \code{.json} or \code{.json.gz}}
 }
 \description{
-Read a serialed httr ndjson object file
+Read a serialized httr response object ndjson file
 }
