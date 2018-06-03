@@ -19,7 +19,7 @@ status](https://travis-ci.org/ropenscilabs/middlechild.svg?branch=master)](https
 
 # middlechild
 
-Tools to Intercept and Validate Network Traffic
+Tools to Intercept, Validate and Consume Web/Network Traffic
 
 ## Description
 

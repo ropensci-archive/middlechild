@@ -24,7 +24,10 @@ call_mitm <- function(args) {
 #' 
 #' @md
 #' @param extra_args see `args` in [sys::exec_background()]
-#' @param collect how to collect `mitmproxy` responses. `httr` will serialize each response as individual lines of `ndjson` `httr` `response` objects that can be read with [middlechild::read_httr()] from a file and that will be returned as a `list` of said objects 
+#' @param collect how to collect `mitmproxy` responses. `httr` will serialize each 
+#'        response as individual lines of `ndjson` `httr` `response` objects that 
+#'        can be read with [middlechild::read_httr()] from a file and that will be 
+#'        returned as a `list` of said objects 
 #' @return `mitm_pid` object
 #' @family mitm_helpers
 #' @export
@@ -45,7 +48,7 @@ start_mitm <- function(collect = c("httr", "har"), extra_args = NULL) {
   
   pid <- call_mitm(args = args) # e.g. mitmdump -s ./har_dump.py --set hardump=./dump.har ...
   
-  out <- list(pid=pid, dump_file = dump_file, collect = collect)
+  out <- list(pid = pid, dump_file = dump_file, collect = collect)
   
   class(out) <- c("mitm_pid")
   
@@ -84,7 +87,7 @@ stop_mitm <- function(pid_obj, read = TRUE, save = NULL) {
   
   if (read) {
     
-    switch(pid$collect,
+    switch(pid_obj$collect,
       "httr" = read_httr(pid_obj$dump_file),
       "har" = HARtools::readHAR(pid_obj$dump_file)
     ) -> out
@@ -105,10 +108,9 @@ stop_mitm <- function(pid_obj, read = TRUE, save = NULL) {
 #' @export
 mitm_status <- function(pid_obj = NULL) {
 
-  if(is.null(pid_obj)) 
-      stop("pid_obj cannot be NULL", call. = FALSE)
+  if (is.null(pid_obj))  stop("pid_obj cannot be NULL", call. = FALSE)
   
-  is.na(sys::exec_status(pid_obj$pid, wait = FALSE))
+  return(is.na(sys::exec_status(pid_obj$pid, wait = FALSE)))
     
 }
 

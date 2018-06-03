@@ -1,4 +1,4 @@
-#' Tools to Intercept and Validate Network Traffic
+#' Tools to Intercept, Validate and Consume Web/Network Traffic
 #'
 #' The 'mitmproxy' <https://mitmproxy.org/> project provides tools
 #' to intercept, modify and/or introspect network traffic. Methods are provided to 
@@ -18,4 +18,5 @@
 #' @importFrom tools file_ext
 #' @importFrom jsonlite stream_in
 #' @importFrom openssl base64_decode
+#' @importFrom anytime anytime
 NULL

@@ -4,7 +4,7 @@
 \name{middlechild}
 \alias{middlechild}
 \alias{middlechild-package}
-\title{Tools to Intercept and Validate Network Traffic}
+\title{Tools to Intercept, Validate and Consume Web/Network Traffic}
 \description{
 The 'mitmproxy' \url{https://mitmproxy.org/} project provides tools
 to intercept, modify and/or introspect network traffic. Methods are provided to

@@ -3,3 +3,4 @@
 ^\.travis\.yml$
 ^README.*$
 middle_child_hex.png
+^\.vscode$

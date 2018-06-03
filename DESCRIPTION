@@ -1,6 +1,6 @@
 Package: middlechild
 Type: Package
-Title: Tools to Intercept and Validate Network Traffic
+Title: Tools to Intercept, Validate and Consume Web/Network Traffic
 Version: 0.1.0
 Date: 2018-05-21
 Authors@R: c(
@@ -28,7 +28,6 @@ Suggests:
     git2r,
     covr,
     knitr,
-    getPass,
     rmarkdown,
     roxygen2
 Depends:
@@ -40,6 +39,8 @@ Imports:
     sys,
     jsonlite,
     tools,
+    anytime,
+    getPass,
     openssl
 RoxygenNote: 6.0.1.9000
 VignetteBuilder: knitr

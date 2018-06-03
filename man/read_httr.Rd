@@ -9,6 +9,9 @@ read_httr(path)
 \arguments{
 \item{path}{path to httr ndjson object file. Can be \code{.json} or \code{.json.gz}}
 }
+\value{
+a \code{list} of minimal \code{httr} response objects
+}
 \description{
 Read a serialized httr response object ndjson file
 }
