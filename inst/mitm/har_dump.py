@@ -164,7 +164,7 @@ def done():
         json_dump: str = json.dumps(HAR, indent=2)
 
         if ctx.options.hardump == '-':
-            mitmproxy.ctx.log(json_dump)
+            mitmproxy.ctx.log.info(json_dump)
         else:
             raw: bytes = json_dump.encode()
             if ctx.options.hardump.endswith('.zhar'):
@@ -173,7 +173,7 @@ def done():
             with open(os.path.expanduser(ctx.options.hardump), "wb") as f:
                 f.write(raw)
 
-            mitmproxy.ctx.log("HAR dump finished (wrote %s bytes to file)" % len(json_dump))
+            mitmproxy.ctx.log.info("HAR dump finished (wrote %s bytes to file)" % len(json_dump))
 
 
 def format_cookies(cookie_list):

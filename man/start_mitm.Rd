@@ -4,9 +4,11 @@
 \alias{start_mitm}
 \title{Spawn a mitmdump background process in "HAR capture" mode and return the process id}
 \usage{
-start_mitm(extra_args = NULL)
+start_mitm(collect = c("httr", "har"), extra_args = NULL)
 }
 \arguments{
+\item{collect}{how to collect \code{mitmproxy} responses. \code{httr} will serialize each response as individual lines of \code{ndjson} \code{httr} \code{response} objects that can be read with \code{\link[middlechild:read_httr]{middlechild::read_httr()}} from a file and that will be returned as a \code{list} of said objects}
+
 \item{extra_args}{see \code{args} in \code{\link[sys:exec_background]{sys::exec_background()}}}
 }
 \value{
