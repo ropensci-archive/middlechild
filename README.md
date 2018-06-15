@@ -50,6 +50,7 @@ The following functions/methods are provided:
     mode and return the process id
   - `stop_mitm`: Stop the mitmproxy background process and retrieve the
     generated HAR file
+  - `as_httr_req`:  Turn a HAR entry into an `httr` request function
 
 ## Installation
 

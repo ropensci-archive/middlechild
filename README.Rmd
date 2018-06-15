@@ -54,6 +54,7 @@ The following functions/methods are provided:
 - `mitm_status`:	Check on the status of an mitmproxy process created with 'mitm_start()'
 - `start_mitm`:	Spawn a mitmdump background process in "HAR capture" mode and return the process id
 - `stop_mitm`:	Stop the mitmproxy background process and retrieve the generated HAR file
+- `as_httr_req`:  Turn a HAR entry into an `httr` request function
 
 ## Installation
 

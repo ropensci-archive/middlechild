@@ -19,4 +19,5 @@
 #' @importFrom jsonlite stream_in
 #' @importFrom openssl base64_decode
 #' @importFrom anytime anytime
+#' @importFrom formatR tidy_source
 NULL
